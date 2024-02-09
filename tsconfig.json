@@ -18,8 +18,27 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": "./src/",
+    "paths": {
+      "@/components/*": ["components/*"],
+      "@/svg/*": ["components/svg/*"],
+
+      "@/api/*": ["api/*"],
+      "@/assets/*": ["assets/*"],
+      "@/config/*": ["config/*"],
+      "@/hooks/*": ["hooks/*"],
+      "@/layout/*": ["layout/*"],
+      "@/providers/*": ["providers/*"],
+      "@/router/*": ["router/*"],
+      "@/services/*": ["services/*"],
+      "@/shared/*": ["shared/*"],
+      "@/store/*": ["store/*"],
+      "@/utils/*": ["utils/*"],
+      "@/views/*": ["views/*"]
+    }
   },
+
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
